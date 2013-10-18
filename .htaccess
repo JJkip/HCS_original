@@ -1,0 +1,4 @@
+AddHandler php-stable .php
+RewriteEngine on
+RewriteCond %{HTTP_HOST} !^www.hcsshare.org$
+RewriteRule ^(.*)$ http://www.hcsshare.org/$1 [R=301]

@@ -1,0 +1,1 @@
+<h2 align="">Password reset click here to log in <a href=<? echo base_url(); ?>> Login</a></h2>

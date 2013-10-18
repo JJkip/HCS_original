@@ -1,0 +1,107 @@
+h1, h2 {
+	font-family: Arial, sans-serif;
+	font-size: 25px;
+}
+h2 {
+	font-size: 20px;
+}
+
+label {
+	font-family: Verdana, sans-serif;
+	font-size: 12px;
+	display: block;
+}
+input {
+	padding: 3px 5px;
+	width: 250px;
+	margin: 0 0 10px;
+}
+input[type="file"] {
+	padding-left: 0;
+}
+input[type="submit"] {
+	width: auto;
+}
+
+#files {
+	font-family: Verdana, sans-serif;
+	font-size: 11px;
+}
+#files strong {
+	font-size: 13px;
+}
+#files a {
+	float: right;
+	margin: 0 0 5px 10px;
+}
+#files ul {
+	list-style: none;
+	padding-left: 0;
+}
+#files li {
+	width: 280px;
+	font-size: 12px;
+	padding: 5px 0;
+	border-bottom: 1px solid #CCC;
+}
+.calendar {
+	font-family: Arial, Verdana, Sans-serif;
+	width: 99%;
+	min-width: 960px;
+	
+	border-collapse: collapse;
+        margin-left: 1px;
+}
+
+.calendar tbody tr:first-child th {
+	color: #505050;
+	background-color: #FFFFFF;
+	margin: 0 0 10px 0;
+}
+
+.day_header {
+	font-weight: normal;
+	text-align: center;
+	color: #757575;
+	font-size: 10px;
+}
+
+.calendar td {
+	width: 14%; /* Force all cells to be about the same width regardless of content */
+	/*border:1px solid #CCC;*/
+	height: 100px;
+	vertical-align: top;
+	font-size: 10px;
+	/*padding: 0;*/
+	
+	padding: 8px;
+  	line-height: 20px;
+  	text-align: left;
+  	
+  	border-top: 1px solid #282828;
+	border-left: 2px solid #dddddd;
+	border-right: 2px solid #dddddd;
+	border-bottom: 1px solid #666;
+	
+}
+
+.calendar td:hover {
+	background: #F3F3F3;
+}
+
+.calendar td .content{
+	/*margin-bottom: 50px*/;
+}
+
+.day_listing {
+	display: block;
+	text-align:center;
+	font-size: 12px;
+	color: #2C2C2C;
+	padding: 5px 5px 0 0;
+}
+
+div.today {
+	background: #E9EFF7;
+	height: 100%;
+}

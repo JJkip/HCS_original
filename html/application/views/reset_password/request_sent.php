@@ -1,0 +1,1 @@
+<h2 align="center">Password reset sent to your email address</h2>

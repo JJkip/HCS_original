@@ -1,0 +1,414 @@
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+
+*{ margin:0; padding:0; }
+body {
+	background:#fff;
+	font-family: Helvetica, Arial, sans-serif;	
+	color: #333;
+}
+p {
+	font-size: 0.9em;
+	line-height: 1.5em;
+	margin: 0 0 0.3em 0;	
+}
+h1, h2, h3, h4, h5, h6 {
+	padding: 0.2em 0;
+	margin: 0;
+	color: #003399;
+}
+h1{	font-size: 1.5em;}
+h2{ font-size: 1.4em;}
+h3{	font-size: 1.3em;}
+h4{ font-size: 1.2em;}
+h5, h6 {
+	font-size: 1.1em;
+}
+img{ border:none; }
+#logo img {
+	float: left;
+}
+#logo h1 {
+	float: left;
+	color: #666;
+	font-size: 72px;
+	line-height: 72px;	
+}
+.clr {clear: both;}
+
+/*=====================================*/
+/*=== THIS IS THE MAIN NAVIGATION  ===*/
+/*===================================*/
+
+#nav-wrap {
+	background-color: #cc0000;
+}
+
+/* menu icon */
+#menu-icon {
+	display: none; /* hide menu icon initially */
+}
+
+#nav, 
+#nav li {
+	margin: 0;
+	padding: 0;
+	font-size: 0.9em;
+}
+#nav li {
+	list-style: none;
+	float: left;
+	margin-right: 5px;
+}
+
+/* nav link */
+#nav a {
+	padding: 9px 0.6em 9px 33px;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+}
+#nav li:hover {
+	background-color: #3FA9F5;
+}
+
+/* nav dropdown */
+#nav ul {
+	background: #fff;
+	border: 12px solid #3FA9F5;
+	padding: 5px 0;
+	position: absolute;
+	left: 12%;
+	right: auto;
+	display: none; /* hide dropdown */
+	width: 76%;
+	float: left;
+}
+#nav ul li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+}
+#nav ul li a {
+	background: none;
+	color: #333;
+}
+#nav ul li:hover {
+	background: none;
+}
+#nav li:hover > ul {
+	display: block; /* show dropdown on hover */
+}
+#nav ul li img {
+	height: 60px;
+	width: auto;
+}
+
+#nav ul li ul {
+	background: #fff;
+	border: 0;
+	padding: 0;
+	position: relative;
+	left: 0;
+	right: auto;
+	display: block; /* hide dropdown */
+	width: auto;
+	float: left;
+}
+#nav ul li ul li {
+	float: none;
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+	line-height: 1em;
+}
+#nav ul li ul li a {
+	color: #003399;
+}
+#nav ul li a:hover {
+	color: #3FA9F5;
+}
+/* menu ids for individual menu icons */
+.menu-370 a {
+	background-image: url(../img/menuicons/home.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;
+}
+.menu-371 a {
+	background-image: url(../img/menuicons/somaliland.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;	
+}
+.menu-373 a {
+	background-image: url(../img/menuicons/puntland.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;
+}
+.menu-374 a {
+	background-image: url(../img/menuicons/southcentral.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;	
+}
+.menu-378 a {
+	background-image: url(../img/menuicons/tools.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;	
+}
+.menu-379 a {
+	background-image: url(../img/menuicons/innovation.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;	
+}
+.menu-380 a {
+	background-image: url(../img/menuicons/media.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;	
+}
+.menu-390 a {
+	background-image: url(../img/menuicons/hcs.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;	
+}
+.menu-398 a {
+	background-image: url(../img/menuicons/logout.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;	
+}
+/*=====================================*/
+/*===== THIS IS THE SEARCH BOX  ======*/
+/*===================================*/
+#search {
+	float: right;
+	padding: 0;
+	margin: 25px 0 0 0;
+}
+#search input {
+	border: 0;
+	background-color: #bbb;
+	color: #111;
+	padding: 5px;
+	margin: 0;	
+}
+#search button {
+	border: 0;
+	background-color: #666;
+	color: #FFF;
+	padding: 5px;
+	margin: 0;	
+}
+
+/*=====================================*/
+/*========= DOCUMENT LISTING  ========*/
+/*===================================*/
+
+.downloadlist li {
+	list-style: none;
+	padding: 0;
+	margin: 0.5em 0;
+}
+.downloadtitle {
+	color: #003399;
+	font-weight: bold;
+}
+.downloaddescription {
+	font-size: 0.9em;
+	line-height: 1.3em;
+	padding: 0 0 0 50px;	
+	min-height: 45px;
+}
+.downloadfiledetails {
+	color: #999;
+}
+.downloadfiledetails a {
+	color: #C00;
+	text-decoration: none;
+}
+.downloadfiledetails a:hover {
+	color: #000;
+}
+.description-pdf {
+	background-image: url(../img/icons/pdf.jpg);
+	background-repeat: no-repeat;
+	background-position: left 5px;		
+}
+.description-word {
+	background-image: url(../img/icons/word.jpg);
+	background-repeat: no-repeat;
+	background-position: left 5px;		
+}
+.description-excel {
+	background-image: url(../img/icons/excel.jpg);
+	background-repeat: no-repeat;
+	background-position: left 5px;		
+}
+.newslist a {
+	color: #333333;	
+	text-decoration: none;
+	padding: 4px 0;
+}
+.columnhead {
+	background-color: #CBDOE4;
+	width: 100%;
+	height: 35px;
+}
+
+/*=====================================*/
+/*============ PUBLIC LOGIN  =========*/
+/*===================================*/
+#userlogin {
+	width: 100%;
+	margin: 2.3em 0;
+	padding: 0;
+}
+#userlogin form {
+	margin: 0;
+	padding: 0;	
+}
+#userlogin .username, #userlogin .password {
+	margin: 0;
+	padding: 0;
+	width: 40%;
+	float: left;
+	color: #fff;
+}
+#userlogin .username input {
+	background-color: #cbd0e4;
+}
+#userlogin .password input {
+	background-color: #3fa9f5;
+}
+#userlogin placeholder {
+	color: #fff;	
+}
+.submit button {
+	margin: 0;
+	padding: 6px;
+	width: 19.5%;
+	border: 0;
+	background-color: #243e90;
+	color: #fff;
+}
+#userlogin input {
+	padding: 7px;
+	margin: 0;
+	border: 0;
+	background-color: #999;
+}
+
+.upload {
+	width: 100%;
+	float: right;
+	text-align: right;
+	padding: 0;
+	margin: 15px 0 0 0;
+}
+.upload span {
+	background-color: #cc0000;
+	font-weight: bold;
+	padding: 4px 10px;
+	color: #fff;
+	text-decoration: none;
+}
+.upload a {
+	background-color: #ccc;
+	padding: 4px 75px 4px 4px;
+	color: #003399;
+	text-decoration: none;
+}
+.upload a:hover {
+	color: #cc0000;
+}
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 767px) {
+
+	body {
+		
+	}
+	/* nav-wrap */
+	#nav-wrap {
+	float: none;
+	}
+
+	/* menu icon */
+	#menu-icon {
+		color: #000;
+		width: 42px;
+		height: 30px;
+		background: #ecebeb url(../img/menu-icon.png) no-repeat 10px center;
+		padding: 8px 10px 0 42px;
+		cursor: pointer;
+		border: solid 1px #666;
+		display: block; /* show menu icon */
+	}
+	#menu-icon:hover {
+		background-color: #f8f8f8;
+	}
+	#menu-icon.active {
+		background-color: #bbb;
+	}
+	
+	/* main nav */
+	#nav {
+		clear: both;
+		width: 200px;
+		z-index: 10000;
+		padding: 5px;
+		background: #f8f8f8;
+		border: solid 1px #999;
+		display: none; /* visibility will be toggled with jquery */
+	}
+	#nav li {
+		clear: both;
+		float: none;
+		margin: 5px 0 5px 10px;
+		font-size: 0.9em;
+	}
+	#nav a, 
+	#nav ul a {
+		font: inherit;
+		background: none;
+		display: inline;
+		padding: 0;
+		color: #666;
+		border: none;
+	}
+	#nav a:hover, 
+	#nav ul a:hover {
+		background: none;
+		color: #000;
+	}
+	
+	/* dropdown */
+	#nav ul {
+		width: 100%;
+		position: static;
+		display: block;
+		border: none;
+		background: inherit;
+	}
+	#nav ul li ul li{
+		margin: 3px 0 3px 15px;
+		width: 100%;
+	}	
+
+
+}
+
+
+/* ========================================== */
+/* ! Provide higher res assets for iPhone 4   */
+/* ========================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+
+/*	.logo {
+		background: url(logo2x.jpg) no-repeat;
+		background-size: 212px 303px;
+	}*/
+
+}
