@@ -1,0 +1,10 @@
+1) apt-get update, upgrade.
+2) apt-get install tasksel.
+2.5) use tasksel to intall lamp, ssh
+3) apt-get install php-fpm.
+4) downgrade php 5.4 to 5.3
+5)install git.
+6) clone repo.
+7) move html folder contents to /var/www
+8) remove apaches default index.html
+9) restart apache.
