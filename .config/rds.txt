@@ -1,0 +1,4 @@
+rds auth
+rds auth
+username: hcsshare
+password: hcs_db_pass
