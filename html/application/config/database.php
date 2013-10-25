@@ -47,7 +47,7 @@
 
 $active_group = 'default';
 $active_record = TRUE;
-$db['default']['hostname'] = 'hcsshare1.ciulimrsbtfe.eu-west-1.rds.amazonaws.com';
+$db['default']['hostname'] = 'hcsshare1.ciulimrsbtfe.eu-west-1.rds.amazonaws.com'; // rds endpoint
 $db['default']['username'] = 'hcsshare';
 $db['default']['password'] = 'hcs_db_pass';
 $db['default']['database'] = 'hcsshare';
