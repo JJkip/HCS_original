@@ -47,10 +47,10 @@
 
 $active_group = 'default';
 $active_record = TRUE;
-$db['default']['hostname'] = 'external-db.s102490.gridserver.com';
-$db['default']['username'] = 'db102490_hcs';
-$db['default']['password'] = 'thestore';
-$db['default']['database'] = 'db102490_hcs_consulting';
+$db['default']['hostname'] = 'hcsshare1.ciulimrsbtfe.eu-west-1.rds.amazonaws.com';
+$db['default']['username'] = 'hcsshare';
+$db['default']['password'] = 'hcs_db_pass';
+$db['default']['database'] = 'hcsshare';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
