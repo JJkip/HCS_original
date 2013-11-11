@@ -11,14 +11,14 @@ class Drafts extends CI_Controller {
 		$this -> load -> model("hcs_tab/hcs_view_model");
 		
 		//get all
-			$drafts=$this->drafts_model->get_drafts();
+			//$drafts=$this->drafts_model->get_drafts();
                                 //start of paginations
                                 $this->load->library('pagination');
 
                                  $config = array();
-                                $config["base_url"] = base_url() . "drafts/index";
+                                $config["base_url"] = base_url() . "index.php/drafts/index";
                                 $config["total_rows"] = $this->drafts_model->record_count();
-                                $config["per_page"] =2;
+                                $config["per_page"] =4;
                                 $config["uri_segment"] = 3;
 
                                 $this->pagination->initialize($config);
@@ -64,8 +64,9 @@ class Drafts extends CI_Controller {
 				
 				
 				$this -> data['content'] = $results;
-                                 $data["links"] = $this->pagination->create_links();
-				$this->template->load('default', 'drafts/index', $this->data);
+                                 $this->data["links"] = $this->pagination->create_links();
+                                 
+                                 $this->template->load('default', 'drafts/index', $this->data);
 	}
 	
 	public function view_draft(){
