@@ -23,10 +23,10 @@
         	<?php for($i=0; $i<count($news); $i++):?>
         	 <div class="newstitle">
 				<p>
-					<?php echo $news[$i]['news_title'] ?>
-					<span> -    <?php echo $news[$i]['date_created']. "by " . $news[$i]['organization'] ?></span>
-					<a href="<?php echo base_url() . 'index.php/news/item/' . $news[$i]['slug'] ?>">read more</a>
+                                <div><?php echo $news[$i]['news_title'] ?></div>
+                                <span> <?php echo $news[$i]['date_created']. "by " . $news[$i]['organization'] ?></span></br>
 				</p>
+                                        <a href="<?php echo base_url() . 'index.php/news/item/' . $news[$i]['slug'] ?>">read more</a>
 			  </div>
           <?php endfor ?>
         </div>
@@ -83,6 +83,8 @@
 				</p>
 			</div>
 <?php  endfor; ?>
+            
         </div>
+            <a href="<?php echo base_url() ?>index.php/news">More Documents</a>
     </div>
 

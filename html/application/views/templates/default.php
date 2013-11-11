@@ -25,11 +25,17 @@ if ($is_registerd) {
         
         <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/shell.css"  type="text/css" media="screen" />
         <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/styles.css" type="text/css" media="screen" />
+         <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/feedback.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/jquery-ui.css" type="text/css"/>
         <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/timepicker.css" type="text/css"/>
         <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/bootstrap.css" type="text/css"/>
     	<link rel="stylesheet" href="<?php echo base_url(); ?>public/css/default.css"  type="text/css"  />
 		<link rel="stylesheet" href="<?php echo base_url(); ?>public/css/component.css" type="text/css"/>
+		<link rel="stylesheet" href="<?php echo base_url(); ?>public/css/calendar.css" type="text/css"/>
+		<link rel="stylesheet" href="<?php echo base_url(); ?>public/css/jquery.dataTables.css" type="text/css"/>
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" type="text/css"/>
+		<link rel="stylesheet" href="<?php echo base_url(); ?>public/css/menu.css" type="text/css"/>
+		
 
         <!-- Delete the CSS below-->
         <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/file_styles.css" type="text/css"/>
@@ -37,12 +43,12 @@ if ($is_registerd) {
 
         <script type="text/javascript" src="<?php echo base_url(); ?>public/scripts/jquery.min.js"></script>
         <script type="text/javascript" src= "<?php echo base_url(); ?>public/scripts/css3-mediaqueries.js"></script>
-        <script type="text/javascript" src= "<?php echo base_url(); ?>public/scripts/script.js"></script>
+       
         <script src="<?php echo base_url(); ?>public/scripts/jquery-1.8.3.js"></script>
         <script src="<?php echo base_url(); ?>public/scripts/jquery-ui.js"></script>
         <script src="<?php echo base_url(); ?>public/scripts/timepicker.js"></script>
         <script src="<?php echo base_url(); ?>public/scripts/modernizr.custom.js"></script>
-
+	
 
 
     </head>
@@ -53,7 +59,7 @@ if ($is_registerd) {
                 <div class="row">
                     <div class="span4 pull-right">
                         <div id="logo">
-                            <img src="<?php echo base_url(); ?>public/img/hcs_ukaid3.jpg" alt="HCS">
+                            <img src="<?php echo base_url(); ?>public/img/hcs_ukaid7.jpg" alt="HCS">
                         </div>
                      </div>
                     <!--<div class="column">
@@ -74,28 +80,23 @@ if ($is_registerd) {
 </form>
 <div>-->
                     <div id="search" >
-                    
-<form class="form-search" accept-charset="utf-8" method="post" action="http://www.hcsshare.org/index.php/search_docs">
-<input type="text" value="" name="search_docs" placeholder="Enter your search term...">
-<input type="submit" value="Search" name="search" class="btnsearch">
-</form>
-<?php /*?><?php
-$attributes = array('class' => 'form-search');
-echo form_open('search_docs', $attributes);
-$js = "";
-echo form_input('search_docs', set_value('search_docs'), $js);
-echo form_submit('search', 'Search');
-echo form_close();
-?><?php */?>
+                    	<form class="form-search" accept-charset="utf-8" method="post" action="http://www.hcsshare.org/index.php/search_docs">
+							<input type="text" value="" name="search_docs" placeholder="Enter your search term...">
+							<input type="submit" value="Search" name="search" class="btnsearch">
+						</form>
+						<?php /*?><?php
+							$attributes = array('class' => 'form-search');
+							echo form_open('search_docs', $attributes);
+							$js = "";
+							echo form_input('search_docs', set_value('search_docs'), $js);
+							echo form_submit('search', 'Search');
+							echo form_close();
+							?><?php */
+						?>
                     </div>
-                    
-                    
                     <div class="fourcol"></div>
-
-                   
-                </div>
-
-                <div class="row">
+				</div>
+				<div class="row">
                     <div class="twelvecol">
                         <nav id="nav-wrap">
                             <ul id="nav" class="links">
@@ -138,7 +139,6 @@ echo form_close();
                                 <li class="menu-379" style="border-left: solid 1px #a51313;">
                                     <a href="<?php echo site_url('innovations') ?>" title="" class=" icon-node-1"><span class='icon'></span><span class='label'>Innovation &amp; Lessons</span></a>
                                 </li>
-
                                 <li class="menu-380" style="border-left: solid 1px #a51313;"><a href="#">Media centre</a>
                                     <ul class="menu-380sub">
                                         <li><a href="<?php echo site_url('media_centre/videos') ?>">Videos</a></li>
@@ -148,35 +148,35 @@ echo form_close();
                                     </ul>
                                 </li>
                                 <?php if(!is_null($user_role)):?>
-                                <li class="menu-390" style="border-left: solid 1px #a51313;"><a href="#" title="" class=" icon-node-1"><span class='icon'></span><span class='label'>HCS</span></a>
-                                    <ul class="menu-390sub"> 
-                                    	
-                                    		
-                                        <?php if (strcasecmp($user_role, "1") == 0 || strcasecmp($user_role, "4") == 0): ?>
-                                            <li><a href="#">Reports</a>
-                                                <ul>
-                                                    <li><a href="<?php echo site_url('reports/1') ?>">Financial</a></li>
-                                                    <li><a href="<?php echo site_url('reports/2') ?>">Narrative</a></li>
-                                                </ul>
-                                            </li>
-                                        <? endif ?>
-                                        <?php if (strcasecmp($user_role, "3") == 0): ?>
-                                                <li><a href="<?php echo site_url('reports/2') ?>">Reports</a></li>
-                                        <?php endif; ?>
+		                                <li class="menu-390" style="border-left: solid 1px #a51313;"><a href="#" title="" class=" icon-node-1"><span class='icon'></span><span class='label'>HCS</span></a>
+		                                    <ul class="menu-390sub"> 
+		                                    	<?php if (strcasecmp($user_role, "1") == 0 || strcasecmp($user_role, "4") == 0): ?>
+			                                         <li><a href="<?php echo site_url('drafts') ?>">Drafts and internal documents</a></li>
+			                                         <li><a href="#">Reports</a>
+			                                                <ul>
+			                                                    <li><a href="<?php echo site_url('reports/1') ?>">Financial</a></li>
+			                                                    <li><a href="<?php echo site_url('reports/2') ?>">Narrative</a></li>
+			                                                </ul>
+			                                          </li>
+		                                  		<? endif ?>
+			                                    <?php if (strcasecmp($user_role, "3") == 0): ?>
+			                                          <li><a href="<?php echo site_url('reports/2') ?>">Reports</a></li>
+			                                    <?php endif; ?>
+				                                  <?php $year = date('Y');
+														$month = date('m');
+												  ?>
+		                                            <li><a href="<?php echo site_url('events/show_calendar/'.$year.'/'.$month) ?>">Events</a></li>
+		                                            <li><a href="<?php echo site_url('meeting_minutes') ?>">Meeting minutes</a></li>
+		                                            <li><a href="<?php echo site_url('news') ?>">News</a></li>
+		                                            <li><a href="<?php echo site_url('feedback') ?>">Feedback</a></li>
+		                                            
+		                                          
+		                                      </ul>
+		                                      </li>
+                                  <?php endif;?>
                                        
-                                                 
-                                                 <?php $year = date('Y');
-													$month = date('m');
-												?>
-                                                <li><a href="<?php echo site_url('events/show_calendar/'.$year.'/'.$month) ?>">Events</a></li>
-                                                <li><a href="<?php echo site_url('meeting_minutes') ?>">Meeting minutes</a></li>
-                                                <li><a href="<?php echo site_url('news') ?>">News</a></li>
-                                            </ul>
-                                        </li>
-                                       <?php endif;?>
-                                       
-                                        <!--Champions & Admins -->
-                                <?php if (strcasecmp($user_role, "1") == 0 || strcasecmp($user_role, "4") == 0): ?>
+                                  <!--Champions & Admins -->
+                                   <?php if (strcasecmp($user_role, "1") == 0 || strcasecmp($user_role, "4") == 0): ?>
                                                     <li class="menu-395" style="border-left: solid 1px #a51313;"><a href="#" title="" class=" icon-node-1"><span class='icon'></span><span class='label'>Champions</span></a>
                                                         <ul class="menu-395sub">
                                                             <li><a href="<?php echo site_url('edit_content/1') ?>">Documents</a></li>
@@ -196,6 +196,7 @@ echo form_close();
                                                                     <li><a href="<?php echo site_url('edit_content/5') ?>">Meeting minutes</a></li>
                                                                     <li><a href="<?php echo site_url('edit_content/6') ?>">Events</a></li>
                                                                     <li><a href="<?php echo site_url('edit_content/7') ?>">News</a></li>
+                                                                      
                                                                 </ul>
                                                             </li>
                                                             <li><a href="#">Categories</a>
@@ -212,12 +213,20 @@ echo form_close();
                                                             </li>
                                                         </ul>
                                                     </li>
+                                                    	
+                                                    	<div class="share_box" ><?php echo anchor('/feedback/create','Feedback') ?></div>
+                                                    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+                                                   <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+                                                    <script type="text/javascript" src="<?php echo base_url(); ?>public/scripts/calendar.js"></script>
+                                                     
+                                                    
                                 <?php endif; ?>
 
                               
 
                                                         <li class="menu-398 last" style="border-left: solid 1px #a51313;">
                                                         	<?php if(is_object($current_user)): ?>
+                                                        	
                                                             <a href="<?php echo site_url('login/logout'); ?>" title="" class="spaces-menu-editable icon-logout"><span class='icon'></span><span class='label'>Logout</span></a>
                                                             <?php endif; ?>
                                                             <?php if(!is_object($current_user)): ?>
@@ -232,10 +241,40 @@ echo form_close();
                                     </div>
          </div>
         <div id="content">
+        	
              <div class="row"><?php echo $body; ?></div>
         </div>
+        
    </div>
-      
+      <div id="dialog" style="display: none"  >
+      	<div class="form">
+		
+			<?php echo form_open_multipart('drafts/create'); ?>
+			
+			<div class="dropdown_section">
+			<h2>Add new Event</h2>
+			<span class="status"></span>
+			</div> 
+			<div id ="message" style="color: red;">
+	       
+	       </div>
+			<label>Event</label>
+			<input type="text" value="" name="title"id="title" /></br>
+			<?php echo form_error('title'); ?></br>
+			<label>Venue</label>
+			<input type="text" value="" name="venue"id="venue" /></br>
+			<?php echo form_error('title'); ?></br>
+			<label>Description</label>
+			<textarea id="description"name="description"></textarea></br>
+			<?php echo form_error('description'); ?></br>
+			
+			<?php echo form_close(); ?>
+		
+		</div>
+      	
+      	
+      	
+      </div>
 	    <div id="footer" style="color:#858585">
 	  		<!--<div class="container ">
 						
@@ -243,7 +282,10 @@ echo form_close();
 							<div class="twelvecol">-->
                             <!--<div id="navcontainer">-->
                             <ul>
-								
+								<!--[if IE 8]>
+										<p>LOREM IPSUJM DSJACLKCJIU VKNADOWEFW WKDFLAQJSO</p>
+								<![endif]-->
+
                                   <li><div class="span2"><a  href="http://www.savethechildren.org/site/c.8rKLIXMGIpI4E/b.6115947/k.8D6E/Official_Site.htm" target="_blank"> <div id="save_the_children"></div></a></div></li>
 								
 									<li><div class="spantwo"><a  href="http://psi.org/" target="_blank"> <div id="psi"></div></a></div></li>
@@ -257,9 +299,16 @@ echo form_close();
 									<li><div class="spantwo"><a href="https://www.gov.uk/government/organisations/department-for-international-development" target="_blank"><div id="dfid"></div> </a></div></li>
                                     </ul>
                                     <div class="span12" ><hr style="color: #9FA5AA; background: #9FA5AA; width:94%; height: 3px;" /> </div>
-        <div class="span12"><p>&copy;&nbsp;2013 <a href="">hcsshare.org </a> &nbsp;|&nbsp;<a href="http://www.hcsshare.org/index.php/home/privacy_policy">Privacy Policy</a>&nbsp;|&nbsp;<a href="http://www.hcsshare.org/index.php/home/terms_of_use">Terms of use</a>&nbsp;|&nbsp;<a href=" http://www.hcsshare.org/index.php/home/contacts">Contact Us</a></p></div>
+        <div class="span9 pull-left"><p>&copy;&nbsp;2013 <a href="">hcsshare.org </a> &nbsp;|&nbsp;<a href="http://www.hcsshare.org/index.php/home/privacy_policy">Privacy Policy</a>&nbsp;|&nbsp;<a href="http://www.hcsshare.org/index.php/home/terms_of_use">Terms of use</a>&nbsp;|&nbsp;<a href=" http://www.hcsshare.org/index.php/home/contacts">Contact Us</a></p></div>
+        								<!--[if IE 8]>
+										<p>LOREM IPSUJM DSJACLKCJIU VKNADOWEFW WKDFLAQJSO</p>
+										<![endif]-->
+
         </div>
-      
-        
+      <!--[if IE 8]>
+										<p>LOREM IPSUJM DSJACLKCJIU VKNADOWEFW WKDFLAQJSO</p>
+								<![endif]-->
+			 <script type="text/javascript" src= "<?php echo base_url(); ?>public/scripts/script.js"></script>	
+			 	 <script src="<?php echo base_url(); ?>public/scripts/jquery.dataTables.js"></script>				
     </body>
 </html>
