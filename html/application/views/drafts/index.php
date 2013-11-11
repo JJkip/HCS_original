@@ -1,3 +1,4 @@
+
 <div class="twelvecol">
     <div class="dropdown_section">
         <h2>DRAFTS AND INTERNAL DOCUMENTS</h2>
@@ -71,6 +72,10 @@
             
             </tbody>
            </table>
+            <?php if(isset($links)){
+                    echo $links;
+            }; ?>
+
            </div>
         </div>
 	

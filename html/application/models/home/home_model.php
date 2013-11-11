@@ -105,6 +105,29 @@ class Home_model extends CI_Model {
             return $query->result_array();
         }
     }
+    public function fetch_docs(){
+      		 $content = array();
+        //Documents
+        $this->db->select("documents.title, 
+                           documents.description, 
+                           documents.directory_path, 
+                           documents.file_name, 
+                           documents.size, 
+                           documents.upload_date,
+                           organizations.organization
+                          
+                          ");
+        $this->db->from("documents");
+		$this->db->join("users", "users.user_id = documents.user_id", "inner");
+		$this->db->join("organizations", "organizations.organization_id = users.organization_id", "inner");
+        $this->db->order_by("documents.upload_date", "DESC");
+        $this->db->limit(4);
+        $query = $this->db->get();
+        
+        if ($query) {
+             return $query->result_array();
+        }
+    }
 
     //Organizations
     function get_organizations() {

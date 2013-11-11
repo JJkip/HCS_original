@@ -42,8 +42,12 @@ class Drafts_model extends CI_Model {
 		$inserted_data = $this->db->insert('draft_comments', $data);
 		return $inserted_data;
 	}
-	public function get_drafts(){
+         public function record_count(){
+         return $this->db->count_all("drafts");
+    }
+	public function get_drafts($limit,$start){
 		$this -> db -> select("*");
+                $this->db->limit($limit, $start);
 		$this -> db -> from("drafts");
 		$this -> db -> order_by("draft_id", "DESC");
 		$query = $this -> db -> get();

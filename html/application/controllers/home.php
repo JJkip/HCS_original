@@ -14,7 +14,7 @@ class Home extends CI_Controller {
 		$this -> data['documents'] = $this -> home_model -> get_uploads();
 		$this -> data['calendar'] = $this -> calendar_model -> generate(date('Y'), date('m'));
 		$news_before = $this -> home_model -> get_news();
-		$this->data['uploads'] = $this->home_model->get_docs();
+		$this->data['uploads'] = $this->home_model->fetch_docs();
 
 		foreach ($news_before as $news) {
 			//            echo 'user id:' . $news['user_id'];
@@ -26,6 +26,7 @@ class Home extends CI_Controller {
 				$this -> data["news"][] = $news;
 			}
 		}
+               $this->data['media']=$this->videos();
 		//        echo '</pre>';
 	  }
 	
@@ -95,6 +96,45 @@ class Home extends CI_Controller {
 //            echo 'here'; die;
             $this -> template -> load('default', 'home/contact', $this->data);
         }
+        
+    function videos() {
+        $params['apikey'] = $this->config->item('youtube_api_key');
+//we need to get our oauth keys from the database
+        $keys = $this->mediacenter_model->get_access_token();
+//        var_dump($keys); die;
+        $params['oauth']['key'] = $this->config->item('youtube_consumer_key');
+        $params['oauth']['secret'] = $this->config->item('youtube_consumer_secret');
+        $params['oauth']['algorithm'] = 'HMAC-SHA1';
+        $params['oauth']['access_token'] = array('oauth_token' => urlencode($keys->oauth_token),
+            'oauth_token_secret' => urlencode($keys->oauth_token_secret));
+        $this->load->library('youtube', $params);
+        $res = json_decode($this->youtube->getUserUploads(), true);
+//        echo '<pre>';
+//        var_dump($res['feed']['entry']); die;
+        $videos = array();
+        $items = $res['feed']['entry'];
+//        var_dump($items);
+        foreach ($items as $item) {
+            $id = end(explode("/", $item['id']['$t']));
+//            echo $id.'<br>'; die;
+//            var_dump($id_arr); die;
+
+            $item_array = array();
+            $item_array['title'] = $item['title']['$t'];
+            $item_array['description'] = $item['content']['$t'];
+            $item_array['link'] = $item['link'][0]['href'];
+            $item_array['keywords'] = $item['media$group']['media$keywords']['$t'];
+            $item_array['id'] = $id;
+
+            $videos[] = $item_array;
+//            echo $item_array['title'];
+        }
+//        var_dump($videos);
+        return $videos;
+//        $this->load->view('media_centre/videos', $data);
+       //return $data;
+//        die;
+    }
 
 
 }

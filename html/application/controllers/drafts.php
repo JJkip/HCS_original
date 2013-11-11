@@ -12,7 +12,21 @@ class Drafts extends CI_Controller {
 		
 		//get all
 			$drafts=$this->drafts_model->get_drafts();
-			
+                                //start of paginations
+                                $this->load->library('pagination');
+
+                                 $config = array();
+                                $config["base_url"] = base_url() . "drafts/index";
+                                $config["total_rows"] = $this->drafts_model->record_count();
+                                $config["per_page"] =2;
+                                $config["uri_segment"] = 3;
+
+                                $this->pagination->initialize($config);
+
+                                $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+                                $drafts=$this->drafts_model->get_drafts($config["per_page"], $page);
+                                //$data["users"]= $this->audition->fetch_users($config["per_page"], $page);
+                                //end of paginations
 
 			$this -> data["organizations"] = $this -> hcs_view_model -> get_organizations();
 			$results=array();
@@ -50,6 +64,7 @@ class Drafts extends CI_Controller {
 				
 				
 				$this -> data['content'] = $results;
+                                 $data["links"] = $this->pagination->create_links();
 				$this->template->load('default', 'drafts/index', $this->data);
 	}
 	
