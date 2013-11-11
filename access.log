@@ -2,3 +2,5 @@
 127.0.0.1 - - [11/Nov/2013:10:28:28 +0300] "GET /undefined?1384154908641 HTTP/1.1" 404 491 "http://hcs/" "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:25.0) Gecko/20100101 Firefox/25.0"
 127.0.0.1 - - [11/Nov/2013:10:30:11 +0300] "GET /favicon.ico HTTP/1.1" 404 493 "-" "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:25.0) Gecko/20100101 Firefox/25.0"
 127.0.0.1 - - [11/Nov/2013:10:30:11 +0300] "GET /favicon.ico HTTP/1.1" 404 492 "-" "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:25.0) Gecko/20100101 Firefox/25.0"
+127.0.0.1 - - [11/Nov/2013:10:42:38 +0300] "GET / HTTP/1.1" 200 2842 "-" "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:25.0) Gecko/20100101 Firefox/25.0"
+127.0.0.1 - - [11/Nov/2013:10:42:49 +0300] "GET /undefined?1384155769169 HTTP/1.1" 404 490 "http://hcs/" "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:25.0) Gecko/20100101 Firefox/25.0"
