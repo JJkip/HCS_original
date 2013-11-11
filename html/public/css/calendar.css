@@ -1,0 +1,17 @@
+
+.calendar-dialog {
+  background: white;
+
+  position: fixed;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  margin: -25% 0 0 -25%;
+
+  /* Embiggen */
+  transform: scale(1.5); /* prefix me */
+
+  /* Hidden */
+  opacity: 0;
+ 
+}

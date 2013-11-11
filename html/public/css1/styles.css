@@ -457,10 +457,13 @@ img{ border:none; }
 	 padding: 9px 0.6em 9px 33px;
 }
 #nav .menu-390sub{ 
-	left:36.7%;
-	width: 53.44680851063829%;
+	left:58%;
+	width: 28.44680851063829%;
   	min-width: 9.39361702127659%;
 	font-size:13px;
+}
+#nav .menu-390sub a{
+	 padding: 9px 0.6em 9px 23px;
 }
 #nav .menu-395sub{
 	left:29.7%;
@@ -620,7 +623,7 @@ img{ border:none; }
 
 }
 .description {
-	text-indent:0px;
+	text-indent:10px;
 }
 .downloadlist li {
     list-style: none;
@@ -791,7 +794,7 @@ form {
 	
 }
 input[type=text]{
-	color:#000000;
+	color:#bcbcbc;
 }
 input[type=button], input[type=button]:hover {
 	position:relative;
@@ -897,12 +900,6 @@ input#userfile button {
 }
 .newslist {
 }
-.sendcancelfeedback{
-	width:300px;
-}
-.commenteditdraft{
-	width:180px;
-}
 #news p{
 	padding-left:0.1%;
 	padding-top:0.4%;
@@ -927,47 +924,10 @@ input#userfile button {
 	
 }
 .newstitle a{
-	text-transform:uppercase;
-	font-size:18px;
-	padding-left:1px;
-	
+	text-transform:lowercase;
+	font-size:14px;
+	padding-left:10px;
 }
-.newstitle a:hover{
-	color:#000000;
-}
-.newstitle p a{
-	font-size: 14px;
-    padding-left: 10px;
-    text-transform: lowercase;
-    color:#4040FF; 
-    text-decoration: 
-}
-.drop_down a:focus {
-	text-decoration:none;
-	color:#D2B48C ;
-}
-.addnew {
-	float:right;
-}
-.addnew a{
-	color:#FFF;
-	font-size: 14px;
-}
-.addnew a:link {text-decoration:none;}
-.addnew a:visited {text-decoration:none;}
-.addnew a:hover {text-decoration:none;}
-.addnew a:active {text-decoration:underline;}
-.back{
-	margin-top:20px;
-}
-.back a{
-	color:#FFF;
-	font-size: 12px;
-}
-.back a:link {text-decoration:none;}
-.back a:visited {text-decoration:none;}
-.back a:hover {text-decoration:none;}
-.back a:active {text-decoration:underline;}
 .date{
 	font-size:14px;
 	font-family: 'PT Sans Narrow', sans-serif;
@@ -984,17 +944,6 @@ input#userfile button {
 }
 .news_items{
 	}
-.mission a{
-	padding: 3px 60px 3px 60px;
-}
-.comment {
-	font-size: 17px;
-}
-.inner-comment{
-	font-size: 15px;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	margin-top:-10px; 
-}
 /*=====================================*/
 /*======title and dropdowns ==========*/
 /*===================================*/
@@ -1010,7 +959,7 @@ input#userfile button {
 
     padding-left: 5px;
     float: left;
-    width: 60;
+    width: 62%;
 	margin-top:-2px;
 	height:12px;
 	font-family: Times, "Times New Roman",Cambria, "Hoefler Text", "Liberation Serif",  serif
@@ -1027,12 +976,7 @@ input#userfile button {
 	color: #252525;
 	background-color: #75A2FF;
 	border-radius: 4px 4px 4px 4px;
-	float:right;
 }
-#userfile{
-	background-color: #FFF;
-}
-
 /*footer*/
 footer{
 	margin-top:-60px;

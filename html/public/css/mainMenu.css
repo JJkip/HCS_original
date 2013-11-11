@@ -1,0 +1,281 @@
+.nav_responsive{
+	display: block;
+}
+.container_responsive{
+	display: none;
+}
+.container_responsive1 {
+    width: 100%;
+    max-width: 1050px;
+    margin: 10px auto;
+}
+.toggleMenu {
+    display:  none;
+    background: #666;
+    padding: 10px 15px;
+    color: #fff;
+}
+.nav_responsive {
+    list-style: none;
+     *zoom: 1;
+     background:#cc0000;
+     
+}
+.nav_responsive:before,
+.nav_responsive:after {
+    content: " "; 
+    display: table; 
+}
+.nav_responsive:after {
+    clear: both;
+}
+.nav_responsive ul {
+    list-style: none;
+    width: 9em;
+}
+.nav_responsive a {
+    padding: 10px 15px;
+    color:#fff;
+    font-size: 14px;
+}
+.nav_responsive li {
+    position: relative;
+}
+.nav_responsive > li {
+    float: left;
+    border-top: 1px solid #104336;
+}
+.nav_responsive li:hover{
+	 background-color: #3FA9F5;
+}
+.nav_responsive > li > .parent {
+    background-image: url("images/downArrow.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.nav_responsive > li > a {
+    display: block;
+}
+.nav_responsive li  ul {
+    position: absolute;
+    left: -9999px;
+}
+.nav_responsive > li.hover > ul {
+    left: 0;
+}
+.nav_responsive li li.hover ul {
+    left: 100%;
+    top: 0;
+}
+.nav_responsive li li a {
+    display: block;
+    background: #ffffff;
+    position: relative;
+    z-index:100;
+    border:2px solid #3FA9F5;
+     color:#000000;
+}
+.nav_responsive li li li a {
+    background:#FFFFFF;
+    z-index:200;
+    border-top: 4px solid #3FA9F5;
+    
+   
+}
+.nav_responsive li li > .parent{
+	background-image: url("images/rightArrow.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+@media screen and (max-width: 1150px) {
+
+.container_responsive {
+    width: 100%;
+    max-width: 1050px;
+    margin: 10px auto;
+    display: block;
+}
+.container_responsive1{
+	display:none;
+}
+.toggleMenu {
+    display:  none;
+    background: #666;
+    padding: 10px 15px;
+    color: #fff;
+}
+.nav_responsive {
+    list-style: none;
+     *zoom: 1;
+     background:#cc0000;
+     
+}
+.nav_responsive:before,
+.nav_responsive:after {
+    content: " "; 
+    display: table; 
+}
+.nav_responsive:after {
+    clear: both;
+}
+.nav_responsive ul {
+    list-style: none;
+    width: 9em;
+}
+.nav_responsive a {
+    padding: 10px 15px;
+    color:#fff;
+    font-size: 14px;
+}
+.nav_responsive li {
+    position: relative;
+}
+.nav_responsive > li {
+    float: left;
+    border-top: 1px solid #104336;
+}
+.nav_responsive li:hover{
+	 background-color: #3FA9F5;
+}
+.nav_responsive > li > .parent {
+    background-image: url("images/downArrow.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.nav_responsive > li > a {
+    display: block;
+}
+.nav_responsive li  ul {
+    position: absolute;
+    left: -9999px;
+}
+.nav_responsive > li.hover > ul {
+    left: 0;
+}
+.nav_responsive li li.hover ul {
+    left: 100%;
+    top: 0;
+}
+.nav_responsive li li a {
+    display: block;
+    background: #ffffff;
+    position: relative;
+    z-index:100;
+    border:2px solid #3FA9F5;
+     color:#000000;
+}
+.nav_responsive li li li a {
+    background:#FFFFFF;
+    z-index:200;
+    border-top: 4px solid #3FA9F5;
+    
+   
+}
+.nav_responsive li li > .parent{
+	background-image: url("images/rightArrow.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.champions{
+	float:left;
+	
+	/*margin-left: -300px;*/
+}
+.savethechildren{
+	
+}
+.home_reponsive {
+	background-image: url(images/home_w.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	padding-left:8px; 
+}
+.somaliland_responsive{
+	background-image: url(images/somaliland_w.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	padding-left:8px;
+	margin-left: 0%
+}
+.puntland_responsive{
+	background-image: url(images/puntland_w.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	padding-left:8px;
+}
+.southcentral_responsive{
+	background-image: url(images/southcentral_w.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	padding-left:8px;
+}
+.tools_responsive{
+	background-image: url(images/tools_w.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	width: 57px;
+	padding-left:8px;
+}
+.innovations_responsive{
+	background-image: url(images/innovation_w.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	width: 172px;
+	padding-left:8px;
+}
+.mediacentre_responsive{
+	background-image: url(images/media_w.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	width: 115px;
+	padding-left:8px;
+}
+.hcs_responsive{
+	background-image: url(images/hcs_w.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	width: 56px;
+	padding-left:8px;
+}
+.champions_responsive{
+	background-image: url(images/manage_w.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	padding-left:8px;
+}
+.login_responsive{
+	background-image: url(images/logout_w.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	padding-left:8px;
+}
+}
+@media screen and (max-width: 868px) {
+	
+    .active {
+        display: block;
+    }
+    .nav_responsive > li {
+        float: none;
+        
+    }
+    .nav_responsive > li:hover{
+    	background-color: #3FA9F5;
+    }
+    .nav_responsive > li > .parent {
+        background-position: 95% 50%;
+    }
+    .nav_responsive li li .parent {
+        background-image: url("images/downArrow.png");
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+    }
+    .nav_responsive ul {
+        display: block;
+        width: 100%;
+    }
+   .nav_responsive > li.hover > ul , .nav_responsive li li.hover ul {
+        position: static;
+    }
+
+}

@@ -1,0 +1,322 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*!
+ * Custom CSS for Nudcon
+ *
+ * Copyright 2012 Nudcon Digital LTD
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love by @felixkimaru
+ */
+
+/*.logo-area{
+	padding: 20px;
+	margin:0;
+}*/
+ul.nav-area-nav{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+.nav-area{
+	padding: 1px;
+	margin-top:-30px;	
+    margin-left: -40px;
+    
+}
+ul.nav-area-nav  li{
+	float:left;
+	margin:0;
+	margin-left: 1%;
+	padding: 3px 0.2%
+}
+ul.nav-area-nav  li a{
+	font-weight:300;
+	color:#000000;
+	font-size:1.1em;
+}
+ul.nav-area-nav  li a:hover{
+	text-decoration:none;
+	color:#134e76
+}
+ul.nav-area-nav  li:hover{
+	
+}
+
+/*a.btn-large-v{
+	background:#7fba00;
+	text-transform:uppercase;
+	font-size: 1.6em;
+	padding: 20px 15%;
+	color:#fff;
+	text-align:center;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-khtml-border-radius: 3px;
+	
+}
+a.btn-large-v.blue{
+	background:#24b4f0;
+}
+a.btn-large-v.blue:hover	{
+	background:#368ee0;
+}
+a.btn-large-v:hover{
+	background-color:#6c9d04
+}
+
+.home-buttons{
+	margin: 50px 0;
+}
+.fb-link{
+	margin:0 auto;
+	text-align:center;
+}
+.white{
+color:#fff;	
+}
+a.readmore{
+	text-decoration:underline;
+	font-size:.9em;
+}
+a.readmore:hover{
+	
+}
+.bg-grey{
+	background-color:#ececec;
+	border-top:#f6f5f5 15px solid;
+	padding:70px 0;
+}
+.our-think h1, .our-think p, .our-think h3, .our-think h4{
+	text-align:center;
+	
+}
+.our-think .icon h1{
+	font-size: 4em;
+}
+.our-think:hover h1, .our-think:hover h3, .our-think:hover h4{
+	color:#7fba00;
+}
+p.center{
+	text-align:center;
+	font-size:1.8em;
+	line-height:1.5em;
+	font-weight: 300;
+	color:#333333;
+}
+.latest-work .title h4{
+	text-align:center;
+}
+.latest-work .image-thumb h5{
+	margin:0;
+	text-align:center;
+}
+a img{
+	opacity: 1.0;
+      -webkit-transition: all 0.3s linear 0s;
+         -moz-transition: all 0.3s linear 0s;
+           -o-transition: all 0.3s linear 0s;
+              transition: all 0.3s linear 0s;
+              }
+a img:hover{
+	opacity: 0.7;
+      -webkit-transition: all 0.3s linear 0s;
+         -moz-transition: all 0.3s linear 0s;
+           -o-transition: all 0.3s linear 0s;
+              transition: all 0.3s linear 0s;
+              }
+ul.clients-list{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+ul.clients-list li{
+	float:left;
+	padding: 20px 0;
+	margin-right: 40px;
+}
+ul.clients-list li img{
+	height:35px;
+}
+.header-wrap{
+	background: #ebeaea url(../img/home/pages.jpg) repeat-x;
+	height:200px;
+}
+.lifted{
+	margin-top:-80px;
+	background:#fff;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-khtml-border-radius: 3px;
+	padding: 40px 40px 10px;
+	width: 98;%
+}
+.page-content{
+	margin: 20px 0;
+}
+p.largew{
+	font-size: 1.2em;
+	line-height:1.4em
+font-weight: 300;	
+}
+.total-checkins-wrap{
+	width: 100px;
+	height:100px;
+	border:#134e76 solid 2px;
+	border-radius: 50px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-khtml-border-radius: 50px;
+	margin: 50px auto;
+}
+.total-checkins-wrap h3,.total-checkins-wrap p{
+	text-align:center;
+	color:#134e76;
+	margin: 10px 0;
+}
+.total-checkins-wrap h3{
+	font-size: 2em;
+}
+.page-main.sms{
+	background-color: #eeebeb;
+	padding: 20px 15px;
+	border-top:#7fba00 solid 6px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-khtml-border-radius: 2px;
+}
+.page-main.sms img{
+	width: 200px;
+}
+p.notification{
+	color:#e63a3a;
+}
+.header-bg{
+	background-color:#134e76;
+	padding: 50px 0;
+	border-bottom: #eeeeee 30px solid;
+	border-top: #063f65 15px solid;
+}
+.header-bg .page-title h1{
+	text-align:center;
+	color:#fff;
+	text-transform:uppercase;
+	font-size: 2em;
+	font-weight: 600;
+}
+.header-bg .page-title p{
+	color:#8ac4fb;
+	text-align:center;
+	font-weight:300;
+	font-size: 1.3em;
+	line-height: 150%;
+}
+.header-bg .page-title .bold{
+	font-weight:400;
+}
+.bold{
+	font-weight:bold;
+}
+ul.no-list{
+	list-style-type:none;
+}
+ul.contacts-wrap{
+	margin: 50px 0 10px;
+}
+ul.contacts-wrap li{
+	font-size:1.3em;
+	color:#134e76;
+	margin: 20px 0;
+	
+}
+ul.contacts-wrap li.contac{
+	font-size:1em;
+}
+.map {
+	background:#fff;
+	border:#ccc solid 1px;
+	padding: 5px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius:2px;
+	-khtml-border-radius: 2px;
+}
+.map iframe{
+	width: 100%;
+	height:200px;
+}*/
+.desktop{
+	display:block;
+}
+
+.mobile{
+	display:none;
+}
+.menu_responsive{
+	display:none;
+}
+@media (max-width: 767px){
+	.desktop{
+	display:none;
+	}
+	
+	.mobile{
+		display:block;
+	}
+	.logo-area h4{
+		text-align:center;
+	}
+	.margin-big{
+		margin-bottom:50px; 
+	}
+}
+.nav-area-mobile{
+	border-top:1px #CCCCCC solid;
+	border-bottom:1px #CCCCCC solid;	
+}
+ul.nav-area-nav-mobile{
+	list-style-type:none;
+	margin:0;
+}
+ul.nav-area-nav-mobile li{
+	float:left;
+	margin-right:1.5%;
+	padding: 8px 0;
+}
+.providers-sms ul{
+	list-style-type:none;
+	margin:0;
+}
+.providers-sms ul li{
+	margin:10px 0;
+}
+p.portfolio-link{
+	text-align:center;
+} 
+.portfolio-img{
+	background:#fff;
+	padding:8px;
+	border:#ccc solid 1px;
+	border-radius:2px;
+	-moz-border-radius: 2px;
+		-webkit-border-radius: 2px;
+			-khtml-border-radius: 2px;
+	
+}
+.portfolio-title h4,.portfolio-title p,.portfolio-title{
+	text-align:center;
+}
+.portfolio-link a{
+	font-size: .9em;
+	text-decoration:underline;
+}
+.sans-serif{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;}
+.serif{font-family:"Cambria, Georgia, Times, " Times New Roman;}
+.monospace{font-family:"Monaco",Courier New,monospace;}
+.clearfix{zoom:1;}.clearfix:before,.clearfix:after{content:"\0020";display:block;height:0;overflow:hidden;}
+.clearfix:after{clear:both;}
