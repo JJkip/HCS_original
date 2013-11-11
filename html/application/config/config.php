@@ -19,7 +19,7 @@ define('IS_AJAX', isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVE
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://www.hcsshare.org/';
+$config['base_url']	= 'http://localhost/HCS-Knowledge-Management-Platform/html';
 /*
  *
  * api key for the youtube account

@@ -47,9 +47,9 @@
 
 $active_group = 'default';
 $active_record = TRUE;
-$db['default']['hostname'] = 'hcsshare1.ciulimrsbtfe.eu-west-1.rds.amazonaws.com'; // rds endpoint
-$db['default']['username'] = 'hcsshare';
-$db['default']['password'] = 'hcs_db_pass';
+$db['default']['hostname'] = 'localhost'; // rds endpoint
+$db['default']['username'] = 'root';
+$db['default']['password'] = 'geranimo';
 $db['default']['database'] = 'hcsshare';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
