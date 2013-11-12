@@ -10,6 +10,30 @@
 		<link rel="stylesheet" href="<?php echo base_url(); ?>public/css/camera.css" type="text/css"/>
 		<link rel="stylesheet" href="<?php echo base_url(); ?>public/css/bootstrap_landing.css" type="text/css"/>
 		<link rel="stylesheet" href="<?php echo base_url(); ?>public/css/bootstrap-responsive.css" type="text/css"/>
+		<link rel="stylesheet" href="<?php echo base_url(); ?>public/css/landingPage_menu.css" type="text/css"/>
+		<script type='text/javascript' src='<?php echo base_url(); ?>public/scripts/jquery.min.js'></script>
+		<script type='text/javascript' src='<?php echo base_url(); ?>public/scripts/jquery.mobile.customized.min.js'></script>
+		<script type='text/javascript' src='<?php echo base_url(); ?>public/scripts/jquery.easing.1.3.js'></script>
+		<script type='text/javascript' src='<?php echo base_url(); ?>public/scripts/camera.js'></script>
+		<script type='text/javascript' src='<?php echo base_url(); ?>public/scripts/bootstrap.js'></script>
+		<script type='text/javascript' src='<?php echo base_url(); ?>public/scripts/bootstrap.min.js'></script>
+		
+		<script>
+			jQuery(function() {
+
+				jQuery('#camera_wrap_1').camera({
+					thumbnails : false
+				});
+
+				jQuery('#camera_wrap_2').camera({
+					height : 'auto',
+					loader : 'bar',
+					pagination : false,
+					thumbnails : false
+				});
+			});
+		</script>
+
 	</head>
 
 	<body>
@@ -20,14 +44,39 @@
 						<div class="row">
 							<div class="span12">
 								<div class="span4 pull-right">
-									<img src="<?php echo base_url(); ?>public/img/hcs_ukaid3.jpg" alt="HCS">
+									<img src="<?php echo base_url(); ?>public/img/hcs_ukaid6.jpg" alt="HCS">
 								</div>
-                                <div class="sixcol" id="landing_page_menu">
+                                <!--<div class="sixcol" id="landing_page_menu">
         <p><a href="<?php echo site_url('home'); ?>">Home</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.hcsshare.org/index.php/home/about_hcs">Who We Are</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.hcsshare.org/index.php/home/partners">Consortium Partners</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.hcsshare.org/index.php/home/programme_impact">Programme Impact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href=" http://www.hcsshare.org/index.php/home/contacts">Contact Us</a></p></div>
 
-							</div>
-                            
-						</div>
+							</div>-->
+ <div class="span8">
+		  			<div class="desktop">
+		  				<div class="nav-area">
+			  				<ul class="nav-area-nav">
+			  					<li><a href="<?php echo site_url('home'); ?>">Home &nbsp;&nbsp;&nbsp;|</a></li>
+			  					<li><a href="http://www.hcsshare.org/index.php/home/about_hcs">Who we are &nbsp;&nbsp;&nbsp;|</a></li>
+			  					<li><a href="http://www.hcsshare.org/index.php/home/partners">Consortium partners&nbsp;&nbsp;&nbsp;|</a></li>
+			  					<li><a href="http://www.hcsshare.org/index.php/home/programme_impact">Programme impact&nbsp;&nbsp;&nbsp;|</a></li>
+			  					<li><a href="http://www.hcsshare.org/index.php/home/contacts">Contact us&nbsp;&nbsp;&nbsp;|</a></li>
+			  				</ul>
+			  			</div>
+			  			
+		  			</div>
+		  			<div class="mobile">
+		  				<div class="nav-area-mobile">
+			  				<ul class="nav-area-nav-mobile">
+			  					<li><a href="<?php echo site_url('home'); ?>">Home</a></li>
+			  					<li><a href="http://www.hcsshare.org/index.php/home/about_hcs">Who we are</a></li>
+			  					<li><a href="http://www.hcsshare.org/index.php/home/partners">Consortium partners</a></li>
+			  					<li><a href="http://www.hcsshare.org/index.php/home/programme_impact">Programme impact</a></li>
+			  					<li><a href="http://www.hcsshare.org/index.php/home/contacts">Contact us</a></li>
+			  				</ul>
+			  			</div>
+			  			
+		  			</div>
+		  		</div>
+	  	</div>
                          
 					</div>
 				</header>
@@ -67,8 +116,8 @@
 						</div>-->
 						<div class="row-fluid">
 							<div class="span12">
-								<p><strong>
-									The Health Consortium Somalia (HCS) is a consortium of five International NGOs working together to implement an integrated health program in targeted areas of Somaliland, Puntland and South Central. This platform documents all the initiatives the different initiatives the partners are carrying out aimed at achieving the stated goal. To know more hit the proceed button</strong><a href="<?php echo site_url('home'); ?>" class="btn btn-info pull-right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PROCEED&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+								<p class="mission"><strong>
+									The Health Consortium Somalia (HCS) is a consortium of five International NGOs working together to implement an integrated health program in targeted areas of Somaliland, Puntland and South Central. This platform documents all the initiatives the different initiatives the partners are carrying out aimed at achieving the stated goal. To know more hit the proceed button</strong><a href="<?php echo site_url('home'); ?>" class="btn btn-info pull-right">&nbsp;&nbsp;&nbsp;PROCEED&nbsp;&nbsp;&nbsp;</a>
 								</p>
 							</div>
 						</div>
@@ -102,12 +151,15 @@
 								<div class="span2">
 									<a href="https://www.gov.uk/government/organisations/department-for-international-development" target="_blank"> <img src="<?php echo base_url(); ?>public/img/partnerlogos/DFID_2.jpg" alt="DFID"> </a>
 								</div>
-                                
-                                    <div class=" span12 pull-left"><hr style="color:#101112; background: #101112; width: 94%; height: 3px; " />      <!--[If IE 9]>  <!-->
-        <p>&copy;&nbsp;2013 <a href="">hcsshare.org </a> &nbsp;|&nbsp;<a href="http://www.hcsshare.org/index.php/home/privacy_policy">Privacy Policy</a>&nbsp;|&nbsp;<a href="http://www.hcsshare.org/index.php/home/terms_of_use">Terms of use</a></p></div>
+								
 							
-						</div>
-</div>
+                                <div class=" span12 pull-left"><hr style="color:#101112; background: #101112; width: 100%; height: 3px; margin-left: -30px; " />   
+									<div class="span9 pull-left">
+										<p style="margin-left: -40px;">&copy;&nbsp;2013 <a href="">hcsshare.org </a> &nbsp;|&nbsp;<a href="http://www.hcsshare.org/index.php/home/privacy_policy">Privacy Policy</a>&nbsp;|&nbsp;<a href="http://www.hcsshare.org/index.php/home/terms_of_use">Terms of use</a>&nbsp;|&nbsp;<a href=" http://www.hcsshare.org/index.php/home/contacts">Contact Us</a></p>
+									</div>
+								
+								</div>
+								
 					</div>
 				</footer>
 			</div>
@@ -115,26 +167,7 @@
 			<!-- </div>  -->
 
 		</div>
-		<script type='text/javascript' src='<?php echo base_url(); ?>public/scripts/jquery.min.js'></script>
-		<script type='text/javascript' src='<?php echo base_url(); ?>public/scripts/jquery.mobile.customized.min.js'></script>
-		<script type='text/javascript' src='<?php echo base_url(); ?>public/scripts/jquery.easing.1.3.js'></script>
-		<script type='text/javascript' src='<?php echo base_url(); ?>public/scripts/camera.js'></script>
-		<script>
-			jQuery(function() {
-
-				jQuery('#camera_wrap_1').camera({
-					thumbnails : false
-				});
-
-				jQuery('#camera_wrap_2').camera({
-					height : 'auto',
-					loader : 'bar',
-					pagination : false,
-					thumbnails : false
-				});
-			});
-		</script>
-
+		
 	</body>
 
 </html>
