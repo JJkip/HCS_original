@@ -27,6 +27,7 @@ class Home extends CI_Controller {
 			}
 		}
                $this->data['media']=$this->videos();
+               
 		//        echo '</pre>';
 	  }
 	
