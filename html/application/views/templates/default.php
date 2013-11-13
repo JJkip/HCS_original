@@ -285,11 +285,3 @@ if ($is_registerd) {
     </body>
 </html>
 
-    
-    
-    
-<<<<<<< HEAD
-    
-=======
-    <?php endif ?>
->>>>>>> 6f05b82bd7ea38c3f1e3416047bb1a31749b1d39
