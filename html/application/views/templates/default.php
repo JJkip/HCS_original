@@ -150,6 +150,8 @@ if ($is_registerd) {
 		                                      </ul>
 		                                      </li>
                                   <?php endif;?>
+                                  <?php endif;?>
+                                  
                                        
                                   <!--Champions & Admins -->
                                    <?php if (strcasecmp($user_role, "1") == 0 || strcasecmp($user_role, "4") == 0): ?>
