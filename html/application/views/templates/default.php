@@ -62,37 +62,13 @@ if ($is_registerd) {
                             <img src="<?php echo base_url(); ?>public/img/hcs_ukaid7.jpg" alt="HCS">
                         </div>
                      </div>
-                    <!--<div class="column">
-					<div id="sb-search" class="sb-search">
-						<form class="form-search" accept-charset="utf-8" method="post" action="http://www.hcsshare.org/index.php/search_docs">
-							<input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
-							<input class="sb-search-submit" type="submit" value="">
-							<span class="sb-icon-search"></span>
-						</form>
-					</div>
-				</div>-->
-                
-        <!--        <div id="search">
-
-<form class="form-search" accept-charset="utf-8" method="post" action="http://www.hcsshare.org/index.php/search_docs">	
-	<input type="text" class="sb-search-input" placeholder="Enter your search term...">
-    <input type="button" value="Search">
-</form>
-<div>-->
+ 
                     <div id="search" >
                     	<form class="form-search" accept-charset="utf-8" method="post" action="http://www.hcsshare.org/index.php/search_docs">
 							<input type="text" value="" name="search_docs" placeholder="Enter your search term...">
 							<input type="submit" value="Search" name="search" class="btnsearch">
 						</form>
-						<?php /*?><?php
-							$attributes = array('class' => 'form-search');
-							echo form_open('search_docs', $attributes);
-							$js = "";
-							echo form_input('search_docs', set_value('search_docs'), $js);
-							echo form_submit('search', 'Search');
-							echo form_close();
-							?><?php */
-						?>
+						
                     </div>
                     <div class="fourcol"></div>
 				</div>
@@ -163,7 +139,7 @@ if ($is_registerd) {
 			                                          <li><a href="<?php echo site_url('reports/2') ?>">Reports</a></li>
 			                                    <?php endif; ?>
 				                                  <?php $year = date('Y');
-														$month = date('m');
+                                                                        $month = date('m');
 												  ?>
 		                                            <li><a href="<?php echo site_url('events/show_calendar/'.$year.'/'.$month) ?>">Events</a></li>
 		                                            <li><a href="<?php echo site_url('meeting_minutes') ?>">Meeting minutes</a></li>
@@ -300,15 +276,16 @@ if ($is_registerd) {
                                     </ul>
                                     <div class="span12" ><hr style="color: #9FA5AA; background: #9FA5AA; width:94%; height: 3px;" /> </div>
         <div class="span9 pull-left"><p>&copy;&nbsp;2013 <a href="">hcsshare.org </a> &nbsp;|&nbsp;<a href="http://www.hcsshare.org/index.php/home/privacy_policy">Privacy Policy</a>&nbsp;|&nbsp;<a href="http://www.hcsshare.org/index.php/home/terms_of_use">Terms of use</a>&nbsp;|&nbsp;<a href=" http://www.hcsshare.org/index.php/home/contacts">Contact Us</a></p></div>
-        								<!--[if IE 8]>
-										<p>LOREM IPSUJM DSJACLKCJIU VKNADOWEFW WKDFLAQJSO</p>
-										<![endif]-->
+        								
 
         </div>
-      <!--[if IE 8]>
-										<p>LOREM IPSUJM DSJACLKCJIU VKNADOWEFW WKDFLAQJSO</p>
-								<![endif]-->
+      
 			 <script type="text/javascript" src= "<?php echo base_url(); ?>public/scripts/script.js"></script>	
-			 	 <script src="<?php echo base_url(); ?>public/scripts/jquery.dataTables.js"></script>				
+			 	 <script src="<?php echo base_url(); ?>public/scripts/jquery.dataTables.js"></script>                              
     </body>
 </html>
+
+    
+    
+    
+    

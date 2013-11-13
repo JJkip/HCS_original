@@ -8,7 +8,7 @@
 				<h2>Please Send Us Your Feedback</h2>
 				
 			</div>
-			<div class="class ="alert alert-success2"><?php echo $this->session->flashdata('message'); ?> </div>
+			<div class="alert alert-success2"><?php echo $this->session->flashdata('message'); ?> </div>
       		<span class="status"></span>
       		<label>
       			Title <span class="required" style="color:red;">*</span>
